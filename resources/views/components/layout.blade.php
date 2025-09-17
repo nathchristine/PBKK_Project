@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninja Network</title>
+    <title>Movie Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     @vite('resources/css/app.css')
 </head>
@@ -11,12 +12,12 @@
 
     <header>
         <nav>
-            <h1>Ninja Network</h1>
-            <a href="/ninjas">
-                All Ninjas
+            <h1>Movie Archive</h1>
+            <a href="/movies">
+                All Movies
             </a>
-            <a href="/ninjas/create">
-                Create New Ninja
+            <a href="/movies/create">
+                Create New Movie
             </a>
         </nav>
     </header>

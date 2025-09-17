@@ -6,19 +6,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ninjas', function () {
-    $ninjas = [
+Route::get('/movies', function () {
+    $movies = [
         ["name" => "mario", "skill" => 75, "id" => "1"],
         ["name" => "luigi", "skill" => 45, "id" => "2"],
     ];
-    return view('ninjas.index', ["greeting" => "hi", "ninjas" => $ninjas]);
+    return view('movies.index', ["greeting" => "hi", "movies" => $movies]);
 });
 
-Route::get('/ninjas/create', function () {
-    return view('ninjas.create');
+Route::get('/movies/create', function () {
+    return view('movies.create');
 });
 
-Route::get('/ninjas/{id}', function ($id) {
+Route::get('/movies/{id}', function ($id) {
    
-    return view('ninjas.show', ["id" => $id]);
+    return view('movies.show', ["id" => $id]);
 });
