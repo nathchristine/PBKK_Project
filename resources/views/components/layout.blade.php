@@ -13,10 +13,10 @@
     <header>
         <nav>
             <h1>Movie Archive</h1>
-            <a href="/movies">
+            <a href="{{ route('movies.index') }}">
                 All Movies
             </a>
-            <a href="/movies/create">
+            <a href="{{ route('movies.create') }}">
                 Create New Movie
             </a>
         </nav>

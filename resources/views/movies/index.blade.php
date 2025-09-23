@@ -4,10 +4,12 @@
     <ul>
         @foreach($movies as $movie)
             <li>
-                <x-card href="/movies/{{ $movie['id'] }}" :highlight="$movie['skill'] > 70">
-                    <h3>{{ $movie['name'] }}</h3>
+                <x-card href="{{ route('movies.show', $movie->id) }}" :highlight="$movie->rating >= 9">
+                    <h3>{{ $movie->title }}</h3>
                 </x-card>
             </li>
         @endforeach
     </ul>
+
+    {{ $movies->links() }}
 </x-layout>
